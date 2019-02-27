@@ -1,0 +1,12 @@
+<div class="panel panel-default">
+<form>
+
+   CustID :<input type="text" class="form-control" placeholder="customer Id"  name="custId"  [(ngModel)]="customer.custId"/>
+   Cust Name: <input type="text" class="form-control" placeholder="name"  name="custname"  [(ngModel)]="customer.custname"/>
+    Address:<input type="text" class="form-control" placeholder="address"  name="addresss" [(ngModel)]="customer.addresss"/>
+    City:<input type="text" class="form-control" placeholder="city"  name="city" [(ngModel)]="customer.city"/>
+    Pin:<input type="text" class="form-control" placeholder="pin"  name="pin" [(ngModel)]="customer.pin"/>
+    Country:<input type="text" class="form-control" placeholder="country"  name="country" [(ngModel)]="customer.country"/>
+    No of Req:<input type="number" class="form-control"  name="noOfConReq"  [(ngModel)]="customer.noOfConReq"/>
+    <button class="btn btn-primary" (click)="submitOrder()">OK</button>
+</form>

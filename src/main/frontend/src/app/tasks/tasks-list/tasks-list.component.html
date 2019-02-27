@@ -1,0 +1,7 @@
+<div class="list-group">
+  <div class="list-group-item" *ngFor="let task of tasks">
+    <input type="checkbox" [checked]="task.completed" (change)="taskCompleted($event,task)"/>
+    <span ngClass="{{task.completed?' name ':' name completed '}}">{{task.name}}</span>
+    <span class="label {{getDuedateLabel(task)}} pull-right">{{task.dueDate}}</span>
+  </div>
+</div>

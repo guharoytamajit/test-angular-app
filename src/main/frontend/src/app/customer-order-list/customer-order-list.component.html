@@ -1,0 +1,14 @@
+<div >
+  <table class="table">
+      <thead class="thead-dark">
+<tr><th>Customer Id</th><th>Customer name</th><th>No. Of Request</th></tr>
+      </thead>
+    <tr  *ngFor="let cust of customerOrderList">
+      <!-- <input type="checkbox" [checked]="task.completed" (change)="taskCompleted($event,task)"/> -->
+      
+      <td >{{cust.custId}}</td>
+      <td >{{cust.custname}}</td>
+      <td >{{cust.noOfConReq}}</td>
+    </tr>
+  </table>
+</div>
